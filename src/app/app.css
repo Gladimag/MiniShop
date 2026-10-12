@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #263238;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  flex: 1 1 160px;
+  padding: 30px 15px;
+  border: 0;
+  border-radius: 15px;
+  background: #e8f5e9;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #c8e6c9;
+}
+
+.card span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.basket {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f3f3f3;
+}
+
+.clear {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #263238;
+  color: white;
+  cursor: pointer;
+}

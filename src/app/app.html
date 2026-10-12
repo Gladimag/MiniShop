@@ -1,0 +1,22 @@
+<h1>Мини-магазин 🛍️</h1>
+
+<div class="cards">
+  @for (product of products; track product) {
+    <button class="card" (click)="add(product)">
+      <span>{{ product }}</span>
+      <small>Добавить в корзину</small>
+    </button>
+  }
+</div>
+
+<section class="basket">
+  <h2>🛒 Корзина — {{ cart.length }}</h2>
+
+  @for (product of cart; track $index) {
+    <p>{{ product }}</p>
+  } @empty {
+    <p>Корзина пока пустая</p>
+  }
+
+  <button class="clear" (click)="cart = []">Очистить</button>
+</section>
